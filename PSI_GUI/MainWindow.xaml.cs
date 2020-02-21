@@ -262,7 +262,7 @@ namespace PSI_GUI
                 /*Had some problems with File and FileInfo always registering the data.csv
                  *as length of 1 even when the file is empty. Tried using CsvReader with the opposite result.
                  *In the end I had to add a Patient List: title in order for the program to append things correctly*/
-                if (new FileInfo("data.csv").Length == 2)
+                if (new FileInfo("data.csv").Length <= 2)
                 {
                     using (StreamWriter sw = File.CreateText("data.csv"))
                     {
