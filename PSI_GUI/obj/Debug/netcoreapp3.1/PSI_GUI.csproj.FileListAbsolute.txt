@@ -1,0 +1,17 @@
+C:\Users\Ben\source\repos\PSI_GUI\PSI_GUI\bin\Debug\netcoreapp3.1\PSI_GUI.exe
+C:\Users\Ben\source\repos\PSI_GUI\PSI_GUI\bin\Debug\netcoreapp3.1\PSI_GUI.deps.json
+C:\Users\Ben\source\repos\PSI_GUI\PSI_GUI\bin\Debug\netcoreapp3.1\PSI_GUI.runtimeconfig.json
+C:\Users\Ben\source\repos\PSI_GUI\PSI_GUI\bin\Debug\netcoreapp3.1\PSI_GUI.runtimeconfig.dev.json
+C:\Users\Ben\source\repos\PSI_GUI\PSI_GUI\bin\Debug\netcoreapp3.1\PSI_GUI.dll
+C:\Users\Ben\source\repos\PSI_GUI\PSI_GUI\bin\Debug\netcoreapp3.1\PSI_GUI.pdb
+C:\Users\Ben\source\repos\PSI_GUI\PSI_GUI\obj\Debug\netcoreapp3.1\PSI_GUI.csprojAssemblyReference.cache
+C:\Users\Ben\source\repos\PSI_GUI\PSI_GUI\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Ben\source\repos\PSI_GUI\PSI_GUI\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Ben\source\repos\PSI_GUI\PSI_GUI\obj\Debug\netcoreapp3.1\PSI_GUI_MarkupCompile.cache
+C:\Users\Ben\source\repos\PSI_GUI\PSI_GUI\obj\Debug\netcoreapp3.1\PSI_GUI_MarkupCompile.lref
+C:\Users\Ben\source\repos\PSI_GUI\PSI_GUI\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Ben\source\repos\PSI_GUI\PSI_GUI\obj\Debug\netcoreapp3.1\PSI_GUI.g.resources
+C:\Users\Ben\source\repos\PSI_GUI\PSI_GUI\obj\Debug\netcoreapp3.1\PSI_GUI.AssemblyInfoInputs.cache
+C:\Users\Ben\source\repos\PSI_GUI\PSI_GUI\obj\Debug\netcoreapp3.1\PSI_GUI.AssemblyInfo.cs
+C:\Users\Ben\source\repos\PSI_GUI\PSI_GUI\obj\Debug\netcoreapp3.1\PSI_GUI.dll
+C:\Users\Ben\source\repos\PSI_GUI\PSI_GUI\obj\Debug\netcoreapp3.1\PSI_GUI.pdb
