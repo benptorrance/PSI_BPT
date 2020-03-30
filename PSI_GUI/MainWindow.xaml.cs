@@ -245,33 +245,38 @@ namespace PSI_GUI
                 entry = (entry + ph.ToString() + ", " + bun.ToString() + " mg/dl" + ", ");
                 entry = (entry + sodium.ToString() + ", " + glucose.ToString() + " mg/dl" + ", ");
                 entry = (entry + hematocrit.ToString() + ", " + oxygen.ToString()+" mmHg");
-
-                //Checks the length of the data.csv file and then appends a new 
-                if (new FileInfo("data.csv").Length > 2)
+                try
                 {
-                    int ID = 0;
-                    ID += File.ReadLines("data.csv").Count();
-                    String id = ID.ToString();
-                    String line = (id + "." + entry);
-                    using (StreamWriter sw = File.AppendText("data.csv"))
+                    //Checks the length of the data.csv file and then appends a new 
+                    if (new FileInfo("data.csv").Length > 2)
                     {
-                        sw.WriteLine(line);
+                        int ID = 0;
+                        ID += File.ReadLines("data.csv").Count();
+                        String id = ID.ToString();
+                        String line = (id + "." + entry);
+                        using (StreamWriter sw = File.AppendText("data.csv"))
+                        {
+                            sw.WriteLine(line);
+                        }
+                        MessageBox.Show("Data added to the end of data.csv");
                     }
-                    MessageBox.Show("Data added to the end of data.csv");
+                    /*Had some problems with File and FileInfo always registering the data.csv
+                     *as length of 1 even when the file is empty. Tried using CsvReader with the opposite result.
+                     *In the end I had to add a Patient List: title in order for the program to append things correctly*/
+                    if (new FileInfo("data.csv").Length <= 2)
+                    {
+                        using (StreamWriter sw = File.CreateText("data.csv"))
+                        {
+                            sw.WriteLine("Patient List:");
+                            sw.WriteLine("1." + entry);
+                        }
+                        MessageBox.Show("Data added to the end of data.csv");
+                    }
                 }
-                /*Had some problems with File and FileInfo always registering the data.csv
-                 *as length of 1 even when the file is empty. Tried using CsvReader with the opposite result.
-                 *In the end I had to add a Patient List: title in order for the program to append things correctly*/
-                if (new FileInfo("data.csv").Length <= 2)
+                catch (Exception file)
                 {
-                    using (StreamWriter sw = File.CreateText("data.csv"))
-                    {
-                        sw.WriteLine("Patient List:");
-                        sw.WriteLine("1." + entry);
-                    }
-                    MessageBox.Show("Data added to the end of data.csv");
+                    MessageBox.Show("File Write Error. Please try to re-create the data.csv located in the netcoreapp3.1 folder");
                 }
-
                 riskValue = 0;
             }
             catch (Exception input)
