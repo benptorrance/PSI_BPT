@@ -8,4 +8,4 @@
      has written to the data.csv file.
 
 #    Trouble Shooting:
-       Delete and remake the data.csv file. For some reason, it has a problem writing to the .csv, however after remaking the file it will      write to it properly. It can write to the file multiple times after that. 
+       Delete and remake the data.csv file. For some reason, it has a problem writing to the .csv, however after remaking the file it will write to it properly. It can write to the file multiple times after that. To remake the data.csv file. Simply open up microsoft excel and save a blank file as date and choose CSV (comma delimited) as the file type. There should now be an error thrown when this type of issue occurs.
